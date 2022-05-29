@@ -661,3 +661,16 @@ a:focus {
 }
 
 /* end footer section*/
+#comment-box, #post, #post2 {
+  border: none;
+  border-radius: 5px;
+  
+}
+#post:hover{
+  background-color: darkblue;
+  color: white;
+}
+#post2:hover{
+  background-color: darkblue;
+  color: white;
+}

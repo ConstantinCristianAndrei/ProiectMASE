@@ -68,26 +68,30 @@
               <a class="nav-link" href="index.html">Acasa <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Despre noi </a>
+              <a class="nav-link" href="about.html">Despre noi </a>
               <ul>
-                <li><a href="despre.html">Executivul</a></li>
-                <li><a href="despre2.html">Proiecte</a></li>
-        
+                <li><a href="#">Executivul</a></li>
+                <li><a href="#">Proiecte</a></li>
+                <li><a href="#">Buget</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Cetateni</a>
+              <a class="nav-link" href="service.html">Cetateni</a>
               <ul>
-                <li><a href="sesizari.html">Sesizări</a></li>
-                <li><a href="sesizari.html">Reclamații</a></li>
-                <li><a href="sugestii.html">Sugestii</a></li>
+                <li><a href="#">Sesizări</a></li>
+                <li><a href="#">Reclamații</a></li>
+                <li><a href="#">Sugestii</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#home_section">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
-         
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control nav_search-input mr-sm-2 d-none" type="search" placeholder="Search"
+              aria-label="Search" value="" />
+            <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+          </form>
         </div>
       </nav>
     </div>
@@ -96,34 +100,26 @@
   <div class="container-fluid">
     <div class="row">
       <div class=" col-md-6">
-        <div>
-  <form class="contact_form"action= "https://formsubmit.co/cristian98a@yahoo.com" method="post">
+  <form class="contact_form"action= "sesizariform.php" method="post">
     <label for="name">Numele:</label>
-    <input type="text" name="nume" placeholder="Introduceti numele" required><br><br>
+    <input type="text" name="nume" placeholder="Introduceti numele"><br><br>
     <label for="name">E-mailul:</label>
-    <input type="text" name="email" placeholder="Introduceti adresa e-mail" required><br><br>
+    <input type="text" name="email" placeholder="Introduceti adresa e-mail"><br><br>
     <label for="name">Genul:</label>
-     <input type="radio" name="gen" value="Masculin"> Masculin<br></br>
-    <input style="margin-left: 53px" type="radio" name="gen" value="Feminin"> Feminin<br><br>
+    Masculin: <input type="radio" name="gen" value="Masculin">
+    Feminin: <input type="radio" name="gen" value="Feminin"><br><br>
     <label for="select">Tipul formularului:</label>
-    <select name="select" required>
+    <select name="select">
       <option value="none">Neselectat</option>
       <option value="sesizare">Sesizare</option>
       <option value="reclamatie">Reclamatie</option>
     </select>
     <br><br>
-    <textarea name="mesaj" rows="8" cols="80" placeholder="Introduceti mesajul" required></textarea>
-    <button type="submit">Trimite</button>
+    <textarea name="mesaj" rows="8" cols="80" placeholder="Introduceti mesajul"></textarea>
+    <input type="submit" name="submit">
   </form>
   </div>
   </div>
-  <div class=" col-md-6">
-    <div class="welcome_detail">
-     
-        <img class="img-fluid" src="images/voce.jpg" alt="" />
-        </div>
-        </div>
-        </div>
   </div>
 </section>
 <!-- end welcome section -->
@@ -131,7 +127,7 @@
 
 
 <!-- info section -->
-<section class="info_section layout_padding" id="home_section">
+<section class="info_section layout_padding">
   <div class="container">
     <div class="row">
       <div class=" col-md-4 address_container">
