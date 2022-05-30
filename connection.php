@@ -6,7 +6,7 @@ $connectionOptions = [
 	"Uid"=>"adminmase",
 	"PWD"=>"Parola1!"
 ];
-$conn = sqlsrv_connect($serverName, $connectionOptions);
-if($conn == false)
+$con = sqlsrv_connect($serverName, $connectionOptions);
+if($con == false)
 	die(print_r(sqlsrv_errors(), true));
 else echo 'Conectare reusita!';
