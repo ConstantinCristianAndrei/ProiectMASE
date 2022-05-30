@@ -1,12 +1,19 @@
 <?php
-  if($_POST){
+  if(isset($_POST['name']) && isset($_POST['comment']) && $_POST['name'] != "" && $_POST['comment'] != ""){
     $name = $_POST['name'];
     $comment = $_POST['comment'];
     $handle = fopen("comments.php", "a");
     fwrite($handle, "<b><i>" . $name . "</b><i> spune:<br />" . $comment . "<br /><br />");
     fclose($handle);
-  }
 
+  }
+  if(isset($_POST['name2']) && isset($_POST['comment2']) && $_POST['name2'] != "" && $_POST['comment2'] != ""){
+    $name2 = $_POST['name2'];
+    $comment2 = $_POST['comment2'];
+    $handle2 = fopen("comments2.php", "a");
+    fwrite($handle2, "<b><i>" . $name2 . "</b><i> spune:<br />" . $comment2 . "<br /><br />");
+    fclose($handle2);
+  }
 ?>
 
 
@@ -84,7 +91,7 @@
               <a class="nav-link" href="#">Despre noi </a>
               <ul>
                 <li><a href="despre.html">Executivul</a></li>
-                <li><a href="despre2.html">Proiecte</a></li>
+                <li><a href="despre2.php">Proiecte</a></li>
 
               </ul>
             </li>
@@ -124,14 +131,14 @@
   <p>
     Prin Hotărârea Consiliului General al Municipiului Bucureşti nr.395/21.12.2016, modificată prin HCGMB nr.225/19.04.2018 și HCGMB nr.277/17.05.2018 s-a aprobat achizioionarea de către Municipiul Bucureşti a unui număr de 100 de tramvaie, în cadrul unui program multianual pe o durata de 4 ani, începând cu anul 2018, precum și studiul de oportunitate “Achiziționare tramvaie și echipamente necesare îmbunătățirii transportului public de călători pe liniile 1, 10, 21, 25, 32,40, 41 și 55".
   </p>
-   <h1>Post a comment:</h1>
+
    <form action="" method="POST">
        Nume: <br /><input type="text" name="name"> <br />
-       Comentariu: <br /><textarea rows="10" cols="30" name="comment"></textarea> <br />
-       <input type="submit" value="Post comment">
+       Comentariu: <br /><textarea rows="5" cols="40" name="comment"></textarea> <br />
+       <input type="submit" value="Posteaza comentariu">
    </form>
    <hr>
-   <h1>Alte comentarii: </h1>
+   <h3>Alte comentarii: </h3>
    <?php
        include "comments.php"
     ?>
@@ -149,12 +156,16 @@
   <p>
     Primarul General, Gabriela Firea: „ASSMB și 5 spitale s-au pregătit sa depuna proiecte pentru accesarea de fonduri europene nerambursabile - direcționate în contextul epidemiei Covid pentru a proteja sănătatea populației, prin POIM (Programul Operațional Infrastructură Mare) 2014-2020 – Axa 4.”
   </p>
-  <input type="text" id="comment-box2" size="65" placeholder="Enter comment">
-    <button id="post2">Post</button>
-    <ul id="unordered2">
-
-   </ul>
-   <script src="codetest2.js"></script>
+  <form action="" method="POST">
+      Nume: <br /><input type="text" name="name2"> <br />
+      Comentariu: <br /><textarea rows="5" cols="40" name="comment2"></textarea> <br />
+      <input type="submit" value="Posteaza comentariu">
+  </form>
+  <hr>
+  <h3>Alte comentarii: </h3>
+  <?php
+      include "comments2.php"
+   ?>
 
     </div>
         </div>
