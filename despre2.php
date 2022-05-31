@@ -133,16 +133,8 @@
             Prin Hotărârea Consiliului General al Municipiului Bucureşti nr.395/21.12.2016, modificată prin HCGMB nr.225/19.04.2018 și HCGMB nr.277/17.05.2018 s-a aprobat achizioionarea de către Municipiul Bucureşti a unui număr de 100 de tramvaie, în cadrul unui program multianual pe o durata de 4 ani, începând cu anul 2018, precum și studiul de oportunitate “Achiziționare tramvaie și echipamente necesare îmbunătățirii transportului public de călători pe liniile 1, 10, 21, 25, 32,40, 41 și 55".
           </p>
 
-          <form action="" method="POST">
-            Nume: <br /><input type="text" name="name"> <br />
-            Comentariu: <br /><textarea rows="5" cols="40" name="comment"></textarea> <br />
-            <input type="submit" value="Posteaza comentariu">
-          </form>
-          <hr>
-          <h3>Alte comentarii: </h3>
-          <?php
-              include "comments.php"
-           ?>
+
+
         </div>
         <div class="col-md-6">
 
@@ -151,6 +143,20 @@
       </div>
       </div>
    <br>
+   <div class="row">
+     <div class="col-md-6">
+       <form action="" method="POST">
+         Nume: <br /><input type="text" name="name"> <br />
+         Comentariu: <br /><textarea rows="5" cols="40" name="comment"></textarea> <br />
+         <input type="submit" value="Posteaza comentariu">
+       </form>
+       <hr>
+       <h3>Alte comentarii: </h3>
+       <?php
+           include "comments.php"
+        ?>
+     </div>
+   </div>
    <div class="row">
      <div class="col-md-6">
 
@@ -167,21 +173,27 @@
   <p>
     Primarul General, Gabriela Firea: „ASSMB și 5 spitale s-au pregătit sa depuna proiecte pentru accesarea de fonduri europene nerambursabile - direcționate în contextul epidemiei Covid pentru a proteja sănătatea populației, prin POIM (Programul Operațional Infrastructură Mare) 2014-2020 – Axa 4.”
   </p>
-  <form action="" method="POST">
-      Nume: <br /><input type="text" name="name2"> <br />
-      Comentariu: <br /><textarea rows="5" cols="40" name="comment2"></textarea> <br />
-      <input type="submit" value="Posteaza comentariu">
-  </form>
   <hr>
-  <h3>Alte comentarii: </h3>
-  <?php
-      include "comments2.php"
-   ?>
+
   </div>
     <div class="col-md-6">
 
       <img class="img-fluid" src="images/spital.jpg" alt="" />
 
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <form action="" method="POST">
+          Nume: <br /><input type="text" name="name2"> <br />
+          Comentariu: <br /><textarea rows="5" cols="40" name="comment2"></textarea> <br />
+          <input type="submit" value="Posteaza comentariu">
+      </form>
+    <h3>Alte comentarii: </h3>
+    <?php
+        include "comments2.php"
+     ?>
     </div>
   </div>
   </section>
