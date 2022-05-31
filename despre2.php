@@ -118,7 +118,7 @@
       <div class="row">
         <!--<div class=" col-md-6">-->
         <div class="col-md-6">
-          <div>
+
           <h2>
             Proiecte propuse
           </h2> <br></br>
@@ -140,18 +140,18 @@
           </form>
           <hr>
           <h3>Alte comentarii: </h3>
-        </div>
+
         </div>
         <div class="col-md-6">
-          <div>
+
           <img class="img-fluid" src="images/autobuze.jpg" alt="" />
-        </div>
+
       </div>
       </div>
    <br>
    <div class="row">
      <div class="col-md-6">
-       <div>
+
   <h3><dt>
     Primaria Capitalei atrage fonduri europene pentru dotarea spitalelor și centrelor sociale în lupta contra Covid-19</dt>
   </h3>
@@ -172,12 +172,12 @@
   </form>
   <hr>
   <h3>Alte comentarii: </h3>
-  </div>
+
   </div>
     <div class="col-md-6">
-      <div>
+
       <img class="img-fluid" src="images/spital.jpg" alt="" />
-    </div>
+    
     </div>
   </div>
   </section>
