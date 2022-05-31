@@ -140,7 +140,9 @@
           </form>
           <hr>
           <h3>Alte comentarii: </h3>
-
+          <?php
+              include "comments.php"
+           ?>
         </div>
         <div class="col-md-6">
 
@@ -172,12 +174,14 @@
   </form>
   <hr>
   <h3>Alte comentarii: </h3>
-
+  <?php
+      include "comments2.php"
+   ?>
   </div>
     <div class="col-md-6">
 
       <img class="img-fluid" src="images/spital.jpg" alt="" />
-    
+
     </div>
   </div>
   </section>
