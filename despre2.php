@@ -116,33 +116,42 @@
   <section class="welcome_section layout_padding">
     <div class="container-fluid">
       <div class="row">
-        <div class=" col-md-6">
-        <div>
-  <h2>
-    Proiecte propuse
-  </h2> <br></br>
-  <h3><dt>
-    100 tramvaie</dt>
-  </h3>
-<br></br>
-  <p>
-    Achiziționare tramvaie și echipamente necesare îmbunătățirii transportului public de călători pe liniile 1, 10, 21, 25, 32,40, 41 și 55.
-  </p>
-  <p>
-    Prin Hotărârea Consiliului General al Municipiului Bucureşti nr.395/21.12.2016, modificată prin HCGMB nr.225/19.04.2018 și HCGMB nr.277/17.05.2018 s-a aprobat achizioionarea de către Municipiul Bucureşti a unui număr de 100 de tramvaie, în cadrul unui program multianual pe o durata de 4 ani, începând cu anul 2018, precum și studiul de oportunitate “Achiziționare tramvaie și echipamente necesare îmbunătățirii transportului public de călători pe liniile 1, 10, 21, 25, 32,40, 41 și 55".
-  </p>
+        <!--<div class=" col-md-6">-->
+        <div class="col-md-6">
+          <div>
+          <h2>
+            Proiecte propuse
+          </h2> <br></br>
+          <h3><dt>
+            100 tramvaie</dt>
+          </h3>
+          <br></br>
+          <p>
+            Achiziționare tramvaie și echipamente necesare îmbunătățirii transportului public de călători pe liniile 1, 10, 21, 25, 32,40, 41 și 55.
+          </p>
+          <p>
+            Prin Hotărârea Consiliului General al Municipiului Bucureşti nr.395/21.12.2016, modificată prin HCGMB nr.225/19.04.2018 și HCGMB nr.277/17.05.2018 s-a aprobat achizioionarea de către Municipiul Bucureşti a unui număr de 100 de tramvaie, în cadrul unui program multianual pe o durata de 4 ani, începând cu anul 2018, precum și studiul de oportunitate “Achiziționare tramvaie și echipamente necesare îmbunătățirii transportului public de călători pe liniile 1, 10, 21, 25, 32,40, 41 și 55".
+          </p>
 
-   <form action="" method="POST">
-       Nume: <br /><input type="text" name="name"> <br />
-       Comentariu: <br /><textarea rows="5" cols="40" name="comment"></textarea> <br />
-       <input type="submit" value="Posteaza comentariu">
-   </form>
-   <hr>
-   <h3>Alte comentarii: </h3>
-   <?php
-       include "comments.php"
-    ?>
+          <form action="" method="POST">
+            Nume: <br /><input type="text" name="name"> <br />
+            Comentariu: <br /><textarea rows="5" cols="40" name="comment"></textarea> <br />
+            <input type="submit" value="Posteaza comentariu">
+          </form>
+          <hr>
+          <h3>Alte comentarii: </h3>
+        </div>
+        </div>
+        <div class="col-md-6">
+          <div>
+          <img class="img-fluid" src="images/autobuze.jpg" alt="" />
+        </div>
+      </div>
+      </div>
    <br>
+   <div class="row">
+     <div class="col-md-6">
+       <div>
   <h3><dt>
     Primaria Capitalei atrage fonduri europene pentru dotarea spitalelor și centrelor sociale în lupta contra Covid-19</dt>
   </h3>
@@ -163,25 +172,14 @@
   </form>
   <hr>
   <h3>Alte comentarii: </h3>
-  <?php
-      include "comments2.php"
-   ?>
-
+  </div>
+  </div>
+    <div class="col-md-6">
+      <div>
+      <img class="img-fluid" src="images/spital.jpg" alt="" />
     </div>
-        </div>
-        <div class=" col-md-6">
-          <div class="welcome_detail">
-
-              <img class="img-fluid" src="images/autobuze.jpg" alt="" />
-              <div>
-                <br>
-                <br> <br> <br>
-              </div>
-              <img class="img-fluid" src="images/spital.jpg" alt="" />
-              </div>
-              </div>
-</div>
-</div>
+    </div>
+  </div>
   </section>
 
 <!-- info section -->
