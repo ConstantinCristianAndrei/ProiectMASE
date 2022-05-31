@@ -31,7 +31,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Comment Box</title>
+  <title>ProiectAdministration</title>
 
 
   <!-- slider stylesheet -->
